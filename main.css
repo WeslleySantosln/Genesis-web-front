@@ -1,14 +1,47 @@
 body{
     background-color: #1C1C1C;
-    color: #ffffff
+    color: #ffffff;
+    font-family: monospace;
+    padding: 24px;
+    
 }
 
 .title{
     font-size: 48px;
-    color: #00ff7f
+    text-align: center;
+    background-image: linear-gradient(to right, #00bFFF, #00ffff);
 }
 
 .list-item{
     margin-bottom: 24px;
+    font-size: 24px;
+}
+
+input {
+    height: 32px;
+    background-color: transparent;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #00bFFF, #00ffff);
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 4px;
+    width: 400px;
+
+}
+
+.add-task-button{
+
+font-size: 16px;
+padding: 9px ;
+background-color: transparent;
+color: #ffffff;
+background-image: linear-gradient(to right, #00bFFF, #00ffff);
+border-radius: 4px;
+margin-left: 5px;
+font-family: monospace;
+
+
+
+
 
 }

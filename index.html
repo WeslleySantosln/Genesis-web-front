@@ -3,18 +3,19 @@
     <head>
         <meta charset="utf-8" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <tile>Check List</tile>
-        <link rel="stylesheet" href="main.css"/>    
+        <tile></tile>
+        <link rel="stylesheet" href="main.css"/>  
+        <script src="main.js"></script>
     </head>
     <body>
        <div>
             <h1 class="title"> Tarefas do dia </h1>
-            <ul>
-                <li classs="list-item">Estudar progamção</li>    
-                <li class="list-item">Arrumar a casa</li>
-                <li class="list-item">Revisar Playlist de JavaScript</li>
-            </ul>
-
+            <ul id="list"> </ul>
+            </div>
+            <div>
+                <input type="text" id="task_nome" placeholder="Inserir Tarefa"/>
+                <button onclick="addNewTask()" class="add-task-button" > Adicionar </button>
+            </div>
        </div>         
     </body>
 </html>
