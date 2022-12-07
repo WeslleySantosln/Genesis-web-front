@@ -2,14 +2,17 @@ body{
     background-color: #1C1C1C;
     color: #ffffff;
     font-family: monospace;
-    padding: 24px;
-    
+    padding: 24px;   
 }
 
 .title{
     font-size: 48px;
     text-align: center;
     background-image: linear-gradient(to right, #00bFFF, #00ffff);
+}
+
+.title-contet{
+    margin-top: 50px;
 }
 
 .list-item{
@@ -19,29 +22,91 @@ body{
 
 input {
     height: 32px;
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     background-image: linear-gradient(to right, #00bFFF, #00ffff);
     border-radius: 4px;
     font-size: 16px;
     padding: 4px;
     width: 400px;
-
+    font-size: 25px;
 }
 
 .add-task-button{
+    font-size: 16px;
+    padding: 9px ;
+    background-color: transparent;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #00bFFF, #00ffff);
+    border-radius: 4px;
+    margin-left: 5px;
+    font-family: monospace;
+}
 
-font-size: 16px;
-padding: 9px ;
-background-color: transparent;
-color: #ffffff;
-background-image: linear-gradient(to right, #00bFFF, #00ffff);
-border-radius: 4px;
-margin-left: 5px;
-font-family: monospace;
+.nav-button{
+    top: 2px;
+    left: 10px;
+    position: absolute;
+    border-radius: 4px;
+    padding: 8px;
+    background-image: linear-gradient(to right, #00bFFF, #00ffff);
+    margin: 8px;
+    cursor: pointer;
+}
 
+.nav-button i{
+    color: #ffffff;    
+}
 
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
 
+.overlay-content{
+    position:relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
 
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
 
 }
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+    
+}
+@media screen and(max-height: 450px){
+    .overlay a { font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px ;
+        top: 15px;
+        right: 35px;
+
+    }
+
+
+}  
